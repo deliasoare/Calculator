@@ -8,6 +8,7 @@
     --operation:#A1E8CC;
     --changeSign:#B7CE63;
     --decimalPoint:#debef2;
+    --shadow :#e09f3e;
 }
 *, body {
     box-sizing:border-box;
@@ -41,6 +42,7 @@ body {
     border-bottom-right-radius:10%;
     border-bottom-left-radius:10%;
     background-color:var(--calculator);
+    box-shadow:10px 5px 5px var(--shadow);
 }
 
 .display {
@@ -69,8 +71,9 @@ body {
     justify-content:center;
     align-items:center;
     padding:1em;
+    box-shadow: 2px 1px 1px var(--shadow);
 }
-.button:hover, .digitHover, .operandHover, .equalHover, .clearHover {
+.button:hover, .digitHover, .operandHover, .equalHover, .clearHover, .changeSignHover {
     transform:translate(0, -5%);
 }
 .digit:hover, .digitHover {
@@ -85,7 +88,7 @@ body {
 .operand:hover, .operandHover {
     background-color:var(--operation);
 }
-.changeSign:hover {
+.changeSign:hover, .changeSignHover {
     background-color:var(--changeSign);
 }
 .decimalPoint:hover {

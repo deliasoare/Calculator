@@ -153,4 +153,7 @@ document.addEventListener('keydown', e => {
     }
     else if (e.keyCode === 46)
         clickButton(clear, 'clearHover');
+
+    else if (e.key === "Shift")
+        clickButton(changeSign, 'changeSignHover');
 })
