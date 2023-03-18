@@ -1,65 +1,107 @@
-*, *::before, *::after {
-    box-sizing:border-box;
+:root {
+    --backgroundYellow:#E2D686;
+    --yellowWarning:#FFFD82;
+    --calculator:#FFDF64;
+    --brown:#C57B57;
+    --equal:#8FB339;
+    --clear:#F4442E;
+    --operation:#A1E8CC;
+    --changeSign:#B7CE63;
+    --decimalPoint:#debef2;
 }
-
-body {
+*, body {
+    box-sizing:border-box;
     padding: 0;
     margin: 0;
+}
+body {
+    height:30%;
+    background-color:var(--backgroundYellow);
+}
+.parent {
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
+    margin:5rem 0;
 }
 .container {
-    background-color:yellow;
-    margin: 5rem;
-    padding:2rem;
-    border-radius:10%;
+    max-width:300px;
+    width:100%;
+}
+
+.calculator {
+    padding:1.5rem;
     display:flex;
     justify-content:center;
+    align-items:center;
     flex-direction:column;
+    border-top-right-radius:10%;
+    border-top-left-radius:10%;
+    border-bottom-right-radius:10%;
+    border-bottom-left-radius:10%;
+    background-color:var(--calculator);
 }
+
 .display {
     background-color:black;
+    width:80%;
+    padding:1rem;
+    padding-bottom:2rem;
+    border-top-right-radius:5%;
+    border-top-left-radius:5%;
+    border-bottom-left-radius:5%;
+    border-bottom-right-radius:5%;
+    color:white;
+    height:4rem;
 }
 .calculatorButtons {
+    padding:1rem 0;
     display:grid;
     grid-template-columns:repeat(4, 1fr);   
+    grid-gap:.5em;
 }
 .button {
-    padding: 0.15em;
-    margin:0.15em;
-
+    cursor:pointer;
+    border:1px solid;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:1em;
+}
+.button:hover, .digitHover, .operandHover, .equalHover, .clearHover {
+    transform:translate(0, -5%);
+}
+.digit:hover, .digitHover {
+    background-color:lightgray;
+}
+.equal:hover, .equalHover {
+    background-color:var(--equal);
+}
+.clearAll:hover, .clearHover {
+    background-color:var(--clear);
+}
+.operand:hover, .operandHover {
+    background-color:var(--operation);
+}
+.changeSign:hover {
+    background-color:var(--changeSign);
+}
+.decimalPoint:hover {
+    background-color:var(--decimalPoint);
 }
 .equal {
     grid-column:4/4;
     grid-row: 6/4;
-    border:1px solid black;
 }
 .zero {
     width:50%;
     grid-row:5/5;
     grid-column:1/4;
-    border:1px solid black;
 }
 .decimalPoint {
     grid-row:5/5;
     grid-column:3/4;
-    border:1px solid pink;
 }
 
-@media (max-width:500px) {
-    html {
-        font-size:10px;
-    }
-}
-@media (min-width:500px) {
-    html {
-        font-size:16px;
-    }
-}
-@media(min-width:800px) {
-    html {
-        font-size:21px;
-    }
-}
