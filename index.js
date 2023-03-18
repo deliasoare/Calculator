@@ -23,15 +23,10 @@ class Calculator {
         this.currentNumber = '';
         this.operation = undefined;
     }
-
-    appendNumber() {
-        
-    }
 }
 const  calculator = new Calculator(nr1, nr2)
 numbers.forEach(number => { 
     number.onclick = function() {
-        calculator.appendNumber();
         calculator.updateDisplay();
     }
 })
@@ -43,3 +38,4 @@ operators.forEach(operator => {
     }
 })
 
+cr cr
