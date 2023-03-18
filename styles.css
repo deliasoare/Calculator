@@ -108,3 +108,9 @@ body {
     grid-column:3/4;
 }
 
+.footer {
+    background-color:var(--calculator);
+    width:100%;
+    padding:2rem;
+    text-align:center;
+}
