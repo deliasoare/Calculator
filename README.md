@@ -2,7 +2,7 @@
 
 A simple web application made to calculate different operations, ranging from additions to divisions.
 
-While one can press the keys, an user using a keyboard can also make use of the it, as follows:
+While one can press the keys, an user using a keyboard can also make use of the it:
 
 ## Keys for using the keyboard:
 	Controls:
@@ -13,3 +13,4 @@ While one can press the keys, an user using a keyboard can also make use of the 
 		- Delete one term - Backspace key
 		- Delete the whole equation - Delete button
 
+LIVE DEMO: https://deliasoare.github.io/Calculator/
