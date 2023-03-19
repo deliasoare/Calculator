@@ -6,10 +6,11 @@
     --brown:#C57B57;
     --equal:#8FB339;
     --clear:#F4442E;
-    --operation:#A1E8CC;
+    --operation:#FFBF9B;
     --changeSign:#B7CE63;
     --decimalPoint:#debef2;
     --shadow :#e09f3e;
+    --digit:#CCD5AE;
 }
 *, body {
     box-sizing:border-box;
@@ -77,7 +78,7 @@ body {
     transform:translate(0, -5%);
 }
 .digit:hover, .digitHover {
-    background-color:lightgray;
+    background-color:var(--digit);
 }
 .equal:hover, .equalHover {
     background-color:var(--equal);
