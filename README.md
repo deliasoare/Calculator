@@ -13,4 +13,5 @@ While one can press the keys, an user using a keyboard can also make use of the 
 		- Delete one term - Backspace key
 		- Delete the whole equation - Delete button
 
-LIVE DEMO: https://deliasoare.github.io/Calculator/
+## Live Demo 
+	https://deliasoare.github.io/Calculator/
