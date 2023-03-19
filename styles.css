@@ -17,7 +17,6 @@
     margin: 0;
 }
 body {
-    height:30%;
     background-color:var(--backgroundYellow);
 }
 .parent {
