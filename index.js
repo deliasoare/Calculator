@@ -64,6 +64,10 @@ class Calculator {
                 this.currentNumber = prev - current;
                 break;
             case "÷":
+                if (current === 0) {
+                    alert("You can't divide by 0!");
+                    return;
+                }
                 this.currentNumber = prev / current;
                 break;
             case "×":
